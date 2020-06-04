@@ -1,8 +1,3 @@
-# Tutorial: https://www.w3schools.com/python/default.asp
-# Read CSV file: https://cmdlinetips.com/2011/08/three-ways-to-read-a-text-file-line-by-line-in-python/
-# Make DB connection: http://www.postgresqltutorial.com/postgresql-python/connect/
-# Execute insert statement: http://initd.org/psycopg/docs/usage.html
-
 # Opzet van script
 import os
 import psycopg2
