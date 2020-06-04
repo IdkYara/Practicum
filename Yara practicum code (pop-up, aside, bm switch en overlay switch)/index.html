@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Immigratie in Nederland</title>
+    <!--
+            Koppelen van CSS bestanden
+        -->
+    <!--CSS van openlayer-->
+    <link href="vendor/openlayers/ol.css" rel="stylesheet" />
+    <!-- Eigen CSS-->
+    <link href="css/vb.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+    <section>
+        <!-- DIV waarin de kaart komt -->
+        <div id="map">
+        </div>
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content">Popup-content<table>
+                    <tr>
+                        <td></td>
+                        <td id="landnaam">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Immigranten:</td>
+                        <td id="aantal_immigratie">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Conflicten:</td>
+                        <td id="aantal_conflicten">&nbsp;</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
+    <aside>
+        <div id="aside-open">
+            <button onclick="openAside()">&lt;</button>
+        </div>
+
+        <div id="aside-close">
+            <button onclick="closeAside()">&gt;</button>
+        </div>
+
+        <div id="aside-content">
+            <div id="layerswitcher">
+                <div id="basemapcontainer">
+                    <h2>Base maps</h2>
+                    <ul id="basemapselectlist"></ul>
+                </div>
+                <div id="overlaycontainer">
+                    <h2>Overlay lagen</h2>
+                    <ul id="overlayselectlist"></ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- 
+            Koppelen van JavaScript bestanden 
+        -->
+    <!-- JS van jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <!-- JS van OpenLayers -->
+    <script src="vendor/openlayers/ol.js"></script>
+
+    <!-- Eigen JS -->
+    <script src="js\globalsvb.js"></script>
+    <script src="js\screenfunctionsvb.js"></script>
+    <script src="data\data.js"></script>
+    <script src="js\viewsvb.js"></script>
+    <script src="js\mapvb.js"></script>
+    <script src="js\vb.js"></script>
+
+</body>
+
+</html>
